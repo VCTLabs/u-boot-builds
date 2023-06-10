@@ -1,18 +1,18 @@
-#u-boot flash binary for imx93 var som (symphony)
+# u-boot flash binary for imx93 var som (symphony)
 
 Use the u-boot blob with varascite rescue SD card or make your own boot card.
 
 Debian rootfs process outlined below, adapted from both of the following:
 
-https://variwiki.com/index.php?title=Yocto_Build_Linux&release=mx93-yocto-kirkstone-5.15.71_2.2.0-v1.2
-https://forum.digikey.com/t/debian-getting-started-with-the-mcimx8m-evk/13020
+* https://variwiki.com/index.php?title=Yocto_Build_Linux&release=mx93-yocto-kirkstone-5.15.71_2.2.0-v1.2
+* https://forum.digikey.com/t/debian-getting-started-with-the-mcimx8m-evk/13020
 
 Make a bootable SDCard and populate with u-boot, kernel, and recent debian
 bullseye (or buster or ubuntu) using yocto-built kernel/u-boot.  Note this
 will use a single rootfs partition to match up with the varascite `.wic` file
 in `meta-variscite-bsp/wic`.
 
-##Basic Requirements
+## Basic Requirements
 
 either:
 
